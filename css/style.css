@@ -95,7 +95,7 @@ body {
   margin-left: 94px;
 }
 
-.site-nav .item + .item {
+.site-nav .item+.item {
   margin-left: 50px;
 }
 
@@ -110,10 +110,10 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  
-   transition-property: var(--accent-color);
+
+  transition-property: var(--accent-color);
   transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -125,12 +125,12 @@ body {
   color: var(--accent-color);
 }
 
-.item .link{
+.item .link {
   position: relative;
 }
 
-.item .link.current::after{
-  content:"";
+.item .link.current::after {
+  content: "";
   position: absolute;
 
   left: 0;
@@ -151,7 +151,7 @@ body {
   margin-left: auto;
 }
 
-.contact-nav .item + .item {
+.contact-nav .item+.item {
   margin-left: 50px;
 }
 
@@ -165,7 +165,7 @@ body {
 
   transition-property: var(--accent-color);
   transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .contact-nav .contact:hover,
@@ -176,7 +176,7 @@ body {
 .contact-icon {
   fill: currentColor;
   margin-right: 10px;
-  }
+}
 
 
 .contact {
@@ -235,18 +235,18 @@ body {
 
   transition-property: var(--accent-color);
   transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
 .button-primary:hover,
-.button-primary:focus{
+.button-primary:focus {
   background-color: #188CE8;
 }
 
 /* Modal */
 
-.backdrop{
+.backdrop {
   position: fixed;
   left: 0px;
   top: 0px;
@@ -258,27 +258,27 @@ body {
   z-index: 10;
 }
 
-.backdrop.is-hidden{
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 
 }
 
-.modal{
+.modal {
   width: 528px;
   height: 581px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-  0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
-.modal-button{
+.modal-button {
   display: flex;
   position: absolute;
   width: 30px;
@@ -293,7 +293,7 @@ body {
   border-radius: 50%;
 
   transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .modal-button:hover,
@@ -301,13 +301,13 @@ body {
   fill: var(--accent-color);
 }
 
-.contact-form{
+.contact-form {
   display: block;
   width: 448px;
   margin: 0 auto;
 }
 
-.contact-form-title{
+.contact-form-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -318,7 +318,7 @@ body {
 }
 
 
-.contact-form-input{
+.contact-form-input {
   width: 100%;
   height: 40px;
   display: block;
@@ -330,34 +330,36 @@ body {
   margin-top: 4px;
 
   transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-  
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
-.contact-form-input:focus{
+.contact-form-input:focus {
   border-color: var(--accent-color);
 }
 
-.contact-form-icon{
+.contact-form-icon {
   width: 18px;
   height: 18px;
   position: absolute;
-   top: 35px;
+  top: 35px;
   left: 10px;
 }
 
-.contact-form-icon:focus{
+.contact-form-icon:focus {
   fill: var(--accent-color);
   transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+
 .contact-form-label {
   position: relative;
   color: var(--secondary-text-color);
+  font-size: 12px;
 }
 
-.contact-form-label:focus-within{
+.contact-form-label:focus-within {
   color: var(--accent-color);
 }
 
@@ -365,7 +367,7 @@ body {
   fill: var(--accent-color);
 }
 
-.contact-form-comments{
+.contact-form-comments {
   width: 100%;
   height: 120px;
   resize: none;
@@ -374,23 +376,26 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-    margin-top: 4px;
+  margin-top: 4px;
 
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-form-comments:focus{
+.contact-form-comments:focus {
   border-color: var(--accent-color);
 }
 
-.contact-checkbox{
+.contact-checkbox {
   margin-bottom: 30px;
-appearance: none;
-position: absolute;
+  appearance: none;
+  position: absolute;
 }
 
-.contact-form-checkbox{
+.contact-form-checkbox {
+display: flex;
+align-items: center;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -398,36 +403,38 @@ position: absolute;
   color: var(--secondary-text-color);
 }
 
-.agreement-text{
+.agreement-text {
   color: var(--accent-color);
   text-decoration-line: underline;
 }
 
-.checkbox-icon{
+.checkbox-icon {
   display: inline-block;
   width: 16px;
   height: 15px;
-  border: 2px solid black; 
+  border: 2px solid black;
   border-radius: 4px;
   margin-right: 7px;
-  
- 
+
+
+
 }
 
-.contact-checkbox:checked + .checkbox-icon{
+.contact-checkbox:checked+.checkbox-icon {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
-background-image: url("../images/modal-send-icon.svg");
-background-size: contain;
+  background-image: url("../images/modal-send-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 
 }
 
-.contact-btn-wrapper{
+.contact-btn-wrapper {
   width: 200px;
   height: 50px;
   border-radius: 4px;
   padding: 10px 56px;
-margin: 30px 124px 0 ;
+  margin: 30px 124px 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -435,12 +442,12 @@ margin: 30px 124px 0 ;
   border: none;
   background-color: var(--accent-color);
   color: var(--primari-background-color);
-  
-  
-  
+
+
+
   transition-property: var(--accent-color);
   transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-btn-wrapper:hover,
@@ -533,25 +540,25 @@ margin: 30px 124px 0 ;
   width: 370px;
 }
 
-.direction-box{
-  position:relative;
+.direction-box {
+  position: relative;
 }
 
-.item-box{
-  position:relative;
+.item-box {
+  position: relative;
   width: 100%;
   height: 70px;
   bottom: 0;
   left: 0;
   background: rgba(47, 48, 58, 0.8);
   color: var(--primari-background-color);
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-text-align: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-padding: 27px 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 27px 0;
 }
 
 
@@ -654,7 +661,7 @@ padding: 27px 0;
 
   transition-property: var(--accent-color);
   transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon-link:hover,
@@ -667,7 +674,7 @@ padding: 27px 0;
 
   transition-property: var(--accent-color);
   transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .team-icon-link:hover .team-icon,
@@ -692,7 +699,7 @@ padding: 27px 0;
 
   transition-property: var(--accent-color);
   transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .clients-list {
@@ -719,7 +726,7 @@ padding: 27px 0;
 
   transition-property: var(--accent-color);
   transition-duration: 2500ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .clients-link:hover,
@@ -747,7 +754,7 @@ padding: 27px 0;
 
   transition-property: var(--accent-color);
   transition-duration: 2500ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .contact-link {
@@ -757,7 +764,7 @@ padding: 27px 0;
 
   transition-property: var(--accent-color);
   transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .address-text {
@@ -785,7 +792,7 @@ padding: 27px 0;
   align-items: baseline;
 }
 
-.footer-connect{
+.footer-connect {
   margin-left: 70px;
 }
 
@@ -799,6 +806,7 @@ padding: 27px 0;
   color: var(--primari-background-color);
   margin-bottom: 20px;
 }
+
 .footer-icon {
   display: flex;
 }
@@ -825,7 +833,7 @@ padding: 27px 0;
 
   transition-property: var(--accent-color);
   transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .footer-link:hover,
@@ -844,11 +852,11 @@ padding: 27px 0;
 
 /* Подписаться */
 
-.footer-subscribe{
+.footer-subscribe {
   margin-left: 93px;
 }
 
-.footer-subscribe-title{
+.footer-subscribe-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -858,10 +866,10 @@ padding: 27px 0;
   margin-bottom: 20px;
 }
 
-.footer-subscribe-input{
+.footer-subscribe-input {
   width: 358px;
   height: 50px;
-  padding: 0  16px;
+  padding: 0 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -870,13 +878,13 @@ padding: 27px 0;
   color: var(--primari-background-color);
 }
 
-.footer-subscribe-input:focus{
-  border-color:var(--accent-color);
+.footer-subscribe-input:focus {
+  border-color: var(--accent-color);
   transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-subscribe-button{
+.footer-subscribe-button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -891,21 +899,21 @@ padding: 27px 0;
   border: none;
   background-color: var(--accent-color);
   color: var(--primari-background-color);
-  
-  transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-.footer-subscribe-button:hover,
-  .footer-subscribe-button:focus {
-    background-color: #188CE8;
-  }
 
-.footer-icon-send{
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe-button:hover,
+.footer-subscribe-button:focus {
+  background-color: #188CE8;
+}
+
+.footer-icon-send {
   width: 24px;
   height: 24px;
   margin-left: 10px;
-  
+
 }
 
 /* Фильтр работ */
@@ -920,10 +928,10 @@ padding: 27px 0;
   border-radius: 4px;
   border-color: transparent;
 
-    transition-property: var(--accent-color);
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  transition-property: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 
 .button-filter:hover,
@@ -990,7 +998,7 @@ padding: 27px 0;
   margin-bottom: 30px;
 
   transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .work-item a {
@@ -1024,34 +1032,34 @@ padding: 27px 0;
   letter-spacing: 0.06em;
 }
 
-.box{
-position: relative;
-width: 370px;
-height: 294px;
-margin-left: auto;
-margin-right: auto;
+.box {
+  position: relative;
+  width: 370px;
+  height: 294px;
+  margin-left: auto;
+  margin-right: auto;
 
-overflow: hidden;
+  overflow: hidden;
 }
 
 .box:hover .overlay {
   transform: translateY(0);
 }
 
-.overlay{
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color:var(--accent-color);
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
 
 
-transform: translateY(100%);
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay-text{
+.overlay-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
