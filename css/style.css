@@ -384,13 +384,13 @@ body {
   border-color: var(--accent-color);
 }
 
-.contact-form-checkbox{
-  text-align: center;
+.contact-checkbox{
   margin-bottom: 30px;
+appearance: none;
+position: absolute;
 }
 
-.agreement-title{
-  font-weight: 400;
+.contact-form-checkbox{
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -403,12 +403,31 @@ body {
   text-decoration-line: underline;
 }
 
+.checkbox-icon{
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid black; 
+  border-radius: 4px;
+  margin-right: 7px;
+  
+ 
+}
+
+.contact-checkbox:checked + .checkbox-icon{
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+background-image: url("../images/modal-send-icon.svg");
+background-size: contain;
+
+}
+
 .contact-btn-wrapper{
   width: 200px;
   height: 50px;
   border-radius: 4px;
   padding: 10px 56px;
-margin: 0 124px;
+margin: 30px 124px 0 ;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -416,6 +435,8 @@ margin: 0 124px;
   border: none;
   background-color: var(--accent-color);
   color: var(--primari-background-color);
+  
+  
   
   transition-property: var(--accent-color);
   transition-duration: 250ms;
@@ -846,6 +867,7 @@ padding: 27px 0;
   border-radius: 4px;
   background-color: transparent;
   outline: none;
+  color: var(--primari-background-color);
 }
 
 .footer-subscribe-input:focus{
